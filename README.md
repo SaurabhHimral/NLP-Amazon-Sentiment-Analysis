@@ -1,33 +1,78 @@
-# Amazon-Alexa-Reviews
+Amazon Alexa Review - Sentiment Analysis
 
-## Watch Video: https://www.youtube.com/watch?v=6A2w-KYG4Ko
+This project analyzes the Amazon Alexa dataset and builds machine learning models to predict whether a given review has a positive or negative sentiment.
 
-## HOW TO RUN
+📌 Project Overview
 
-Step 1: Clone the repository
-```
-git clone https://github.com/Surbhit01/Amazon-Alexa-Reviews.git
-```
+Performed Exploratory Data Analysis (EDA) to understand the dataset.
 
-Step 2: Open the cloned repository and create a conda environment. Activate the new environment
-```
-conda create -n amazonreview python=3.10
-```
-```
-conda activate amazonreview
-```
+Preprocessed text using tokenization, stopword removal, and stemming.
 
-Step 3: Install the requirements file
-```
+Engineered features such as review length.
+
+Trained and evaluated multiple machine learning models.
+
+Visualized results using confusion matrices and accuracy scores.
+
+⚙️ Technologies & Libraries Used
+
+Python 3.x
+
+Jupyter Notebook
+
+Pandas, NumPy (data handling)
+
+Matplotlib, Seaborn (visualization)
+
+NLTK (text preprocessing)
+
+Scikit-learn (feature extraction, model training & evaluation)
+
+📂 Project Structure
+├── Data Exploration & Modelling.ipynb   # Main Jupyter Notebook
+├── README.md                            # Project Documentation
+├── data/                                # Dataset (if included)
+└── requirements.txt                     # Dependencies
+
+🚀 How to Run
+
+Clone the repository:
+
+git clone https://github.com/SaurabhHimral/NLP-Amazon-Sentiment-Analysis/tree/main.git
+cd amazon-alexa-sentiment
+
+
+Create a virtual environment and activate it:
+
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+
+
+Install dependencies:
+
 pip install -r requirements.txt
-```
 
-Step 4: Run the app
-```
-flask --app api.py run
-```
 
-Step 5: The app will run on port 5000. 
-```
-localhost:5000
-```
+Open the Jupyter Notebook:
+
+jupyter notebook
+
+
+Run Data Exploration & Modelling.ipynb.
+
+📊 Results
+
+Built and compared classification models.
+
+Best-performing model achieved high accuracy in sentiment classification.
+
+Confusion matrices were used to analyze performance.
+
+🔮 Future Improvements
+
+Try deep learning models (e.g., LSTMs, Transformers).
+
+Deploy the model as a web app using Flask/Streamlit.
+
+Experiment with word embeddings (Word2Vec, GloVe, BERT).
